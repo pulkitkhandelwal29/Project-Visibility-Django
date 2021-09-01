@@ -1,0 +1,198 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* layout, spacing, typography, color and others */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start Navbar Editing */
+
+header nav {
+    background-color: #f4f4f4;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.navbar-brand {
+    width: 20vw;
+    height: 4vw;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+}
+
+#mainNavbar .nav-link {
+    margin: 0 0.2rem;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #C13B3A;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    box-shadow: -6px -6px 20px 0 rgba(255, 255, 255, .5),
+        12px 12px 12px 0 rgba(0, 0, 0, .03);
+    transition: 0.4s all;
+}
+
+#mainNavbar .nav-link:hover {
+    box-shadow: inset -57px -54px 50px -39px rgba(0, 83, 132, 0.6), 8px 10px 9px 0 rgba(0, 0, 0, 0.03), inset 63px 63px 90px 21px rgba(0, 0, 0, 0.04);
+    border-color: #eee;
+}
+
+#mainNavbar .nav-link.active {
+    box-shadow: inset -57px -54px 50px -39px rgba(0, 83, 132, 0.6), 8px 10px 9px 0 rgba(0, 0, 0, 0.03), inset 63px 63px 90px 21px rgba(0, 0, 0, 0.04);
+    border-color: #eee;
+}
+
+@media only screen and (max-width: 780px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        width: 32vw;
+        height: 10vw;
+    }
+}
+
+/* End Navbar Editing */
+/* Introduction Editing Starts */
+
+.intro {
+    font-size: 16px;
+    color: #000000;
+    --animate-duration: 1.5s;
+}
+
+.intro h1,
+#howtouse-section h2,
+#aboutus-section h2,
+#technology-section h2 {
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.intro p,
+#howtouse-section ul li,
+#aboutus-section ul li {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.intro img,
+#howtouse-section img,
+#aboutus-section img,
+#technology-section img {
+    mix-blend-mode: luminosity;
+    transition: 0.4s all;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.intro img:hover,
+#howtouse-section img:hover,
+#aboutus-section img:hover,
+#technology-section img:hover {
+    mix-blend-mode: initial;
+}
+
+/* Introduction Editing Ends */
+/* Tabs Section Starts */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Tabs Section Ends */
+/* Speech to Text Section Starts */
+
+#input-converter button {
+    padding: 10px;
+    background-color: #6a67ce;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#output {
+    background-color: #F9F9F9;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Speech to Text Section Ends */
+/* About Section Starts */
+
+q {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* About Section Ends */
+/* technology Section Starts */
+
+#technology-section ul li {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+#technology-section ol li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+/* technology Section Ends */
