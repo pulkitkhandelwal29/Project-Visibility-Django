@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- How to Use Information Section -->
+{% block content %}
+<section class="container" id="howtouse-section">
+    <section class="row mt-5">
+        <section class="col-md-5 mt-5">
+            <h2 class="animate__animated animate__bounceInLeft">HOW TO USE</h2>
+            <ul class="animate__animated animate__bounceInRight">
+                <li> Introductory audio plays at the beginning.</li><br>
+                <li> Choose the desired option from the options list.</li><br>
+                <li> Contents of the page will be read aloud.</li><br>
+                <li> Website too will be redirected.</li><br>
+                <li> Speak Stop to stop the website.</li><br>
+                <li> Double click anywhere on the screen to relaunch.</li><br>
+                <li> Speak only when entire audio stops.</li><br>
+            </ul>
+        </section>
+        <section class="offset-md-2 col-md-5">
+            <img src="{% static '/assests/howtouse.png' %}" alt="howtouseQuotation" class="img-fluid">
+        </section>
+    </section>
+</section>
+{% endblock %}

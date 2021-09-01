@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- beneficiary Section Starts -->
+{% block content %}
+<section class="container" id="aboutus-section">
+    <section class="row mt-5">
+        <section class="col-md-5 mt-5">
+            <h2 class="animate__animated animate__bounceInLeft">Beneficiary</h2><br>
+            <ul class="animate__animated animate__bounceInRight">
+                <li>Our project will benefit both the government and the visually impaired people.</li><br>
+                <li>People with visual impairment will be able to access the information via the website, which will help them in becoming digitally literate.</li><br>
+                <li>Project will also help the government as information now can easily be transferred to the visually impaired people</li>
+            </ul>
+        </section>
+        <section class="offset-md-2 col-md-5">
+            <img src="{% static '/assests/aboutus.jpg' %}" alt="aboutusimage" class="img-fluid">
+        </section>
+    </section>
+</section>
+{% endblock %}
+<!-- beneficiary Section Ends -->

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- Technology Section Starts -->
+{% block content %}
+<section class="container" id="technology-section">
+    <section class="row mt-5">
+        <section class="col-md-5 mt-5">
+            <h2 class="animate__animated animate__bounceInLeft">Technologies</h2>
+            <ul class="animate__animated animate__bounceInRight">
+              <li class="animate__animated animate__bounceInRight">HTML,CSS,Bootstrap</li>
+              <br>
+                <li>JavaScript ES6<ol>
+                        <li>
+                            Speech Recognition API
+                        </li>
+                    </ol>
+                </li>
+                <br>
+                <li class="animate__animated animate__bounceInLeft">Backend Technology<ol>
+                        <li>Django Web Framework</li>
+                        <li>NodeJS / ExpressJS</li>
+                    </ol>
+                </li>
+                <br>
+                <li class="animate__animated animate__bounceInLeft">Python<ol>
+                        <li>Web scraping with Beautifulsoup, Requests and Urllib</li>
+                        <li>Text to speech using GTTs (Google Text to Speech) API</li>
+                        <li>Python packages like Re</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section class="offset-md-2 col-md-5 mt-5">
+            <img src="{% static '/assests/technology.jpg' %}" alt="aboutusimage" class="img-fluid">
+        </section>
+    </section>
+</section>
+{% endblock %}
+<!-- Technology Section Ends -->

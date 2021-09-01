@@ -1,0 +1,85 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIBILITY</title>
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- animate Css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Developer Css File-->
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+</head>
+
+<body>
+    <!--Navbar Section Starts-->
+    <!-- ul/li was added for dropdown. text lowercase for sub menu -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static '/assests/companylogo.png' %}" title="Visibility Logo"
+                        class="ms-4"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <div class="navbar-nav text-uppercase ms-auto p-1">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                        <a class="nav-link" href="{% url 'howtouse' %}">How to Use</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">More</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="{% url 'motivation' %}">Motivation</a></li>
+                                <li><a class="dropdown-item" href="{% url 'beneficiary' %}">Beneficiary</a></li>
+                                <li><a class="dropdown-item" href="{% url 'technologies' %}">Technologies</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar Section Ends -->
+    <!-- Default Audio -->
+    <!-- <audio src="/audio/intro.mp3" id="initial-audio"></audio> -->
+    <audio src="{% static 'audio/intro.mp3' %}" id="initial-audio" class="d-none"></audio>
+    <!-- Python Audio -->
+    {% if source_path %}
+    <audio src="{{ source_path }}" class="d-none" id="python-audio"></audio>
+    {% else %}
+    <audio src="" class="d-none" id="python-audio"></audio>
+    {% endif %}
+    <!-- <audio src="" class="d-none" id="python-audio"></audio> -->
+    <!-- Stop Audio -->
+    <!-- <audio src="/audio/stop.mp3" class="d-none" id="stop-audio"></audio> -->
+    <audio src="{% static 'audio/stop.mp3' %}" class="d-none" id="stop-audio"></audio>
+    <!-- Default form -->
+    <form action="{% url 'home' %}" method="POST" id="express">
+      {% csrf_token %}
+        <input type="hidden" value="" id="user-text" name="text">
+        <input type="hidden" value="" id="user-confidence" name="confidence">
+        <input type="hidden" value="" id="current-url" name="url">
+    </form>
+    <!--Bootstrap Combined Js file-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Speech to Text Conversion -->
+    <script src="{% static '/js/speechToText.js'%}" defer></script>
+</body>
+
+{% block content %}
+{% endblock %}
+
+</html>

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- About Us Section Starts -->
+{% block content %}
+<section class="container" id="aboutus-section">
+    <section class="row mt-5">
+        <section class="col-md-5 mt-5">
+            <h2 class="animate__animated animate__bounceInLeft">Team Members</h2>
+            <ul class="animate__animated animate__bounceInRight">
+                <li>Pulkit Khandelwal</li>
+                <br>
+                <li>Anunay Anand</li>
+                <br>
+                <li>Kumar Kislay</li>
+                <br>
+                <li>Yash Mishra</li>
+            </ul>
+            <br>
+            <!-- Our Quotation -->
+            <q class="animate__animated animate__bounceInLeft">
+              We use our knowledge and skills to solve real world problem</q>
+        </section>
+        <section class="offset-md-2 col-md-5">
+            <img src="{% static '/assests/aboutus.jpg' %}" alt="aboutusimage" class="img-fluid">
+        </section>
+    </section>
+</section>
+{% endblock %}
+<!-- About Us Section Ends -->
