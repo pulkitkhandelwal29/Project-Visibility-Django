@@ -1,5 +1,12 @@
 // Primary loader Function to Start the Process
 window.addEventListener("load", () => {
+  var alerted = localStorage.getItem("alerted") || "";
+  if (alerted != "yes") {
+    window.alert(
+      "Double Click / Double Tap anywhere on the screen to start the website!"
+    );
+    localStorage.setItem("alerted", "yes");
+  }
   audioCheck();
 });
 
@@ -24,6 +31,7 @@ const audioCheck = () => {
   } else {
     // If a audio src exist play it first
     if (pageAudio.getAttribute("src") !== "") {
+        console.log(pageAudio.getAttribute("src"))
         pageAudio.play();
         pageAudio.addEventListener("ended", playDefaultAudio);
       // pageAudio.play();

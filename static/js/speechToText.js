@@ -1,5 +1,12 @@
 // Primary loader Function to Start the Process
 window.addEventListener("load", () => {
+  var alerted = localStorage.getItem("alerted") || "";
+  if (alerted != "yes") {
+    window.alert(
+      "Double Click / Double Tap anywhere on the screen to start the website!"
+    );
+    localStorage.setItem("alerted", "yes");
+  }
   audioCheck();
 });
 
