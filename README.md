@@ -10,7 +10,7 @@ Visually Impaired Society improvement by including Language speech Input to eyed
       <a href="#about-the-project">About The Project</a>
       <ul>
          <li><a href="#how-to-use">How to use</a></li>
-        <li><a href="#built-with">Built with</a></li>
+        <li><a href="#tools-and-technologies">Tools and Technologies</a></li>
       </ul>
     </li>
     <li>
@@ -23,7 +23,6 @@ Visually Impaired Society improvement by including Language speech Input to eyed
     <li><a href="#contribute">Contribute</a></li>
     <!-- <li><a href="#license">License</a></li> -->
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -35,7 +34,11 @@ Visually Impaired Society improvement by including Language speech Input to eyed
 	<img src="https://user-images.githubusercontent.com/55958223/130330130-34bf4ffc-cd60-4fc8-87e0-5ac3f455086b.jpeg" alt="Visibility Logo" width="80%">
 </p>
 
-Project Visibility helps a user to access a website using voice commands. The target audience of this project are visually impaired people. This can also be helpful to the government as well as a normal website user.  We spotted that No means of technology existed, which was helping visually impaired people to access information via websites. 
+We've noticed that visually impaired people of our society face issues when it comes to accessing and interacting with websites, as there is no proper medium for them. To solve this problem we've created this project.
+
+Project VISIBILITY would empower visually impaired people and make them digitally literate.
+
+We have used speech recognition functionality so visually impaired people can access websites easily and thus removing the technological barrier. We've deployed, shared and also published an article regarding the project. 
 
 ### HOW TO USE:
 * Introductory audio plays at the beginning.
@@ -46,43 +49,34 @@ Project Visibility helps a user to access a website using voice commands. The ta
 * Double click anywhere on the screen to relaunch
 * Speak only when entire audio stops 
 
-### Built With:
-* This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [python](https://getpython.com)
-* [JavaScript Es8](https://www.javascript.com/)
-* [Node.js](https://nodejs.org/en/)
-* [Express.js](https://expressjs.com/)
-* [Ejs](https://ejs.co/)
+### Tools and Technologies:
+* HTML,CSS,Bootstrap
+* JavaScript ES6 (Speech Recognition API) 
+* Backend Technology (Django Web Framework)
+* Python<br>
+	<br>Web scraping with Beautifulsoup, Requests and Urllib
+	<br>Text to speech using GTTs (Google Text to Speech) API
+	<br>Python packages like Re
 
 <!-- GETTING STARTED -->
 ## Getting Started
-This app contains API secrets and passwords that have been hidden deliberately, so the app cannot be run with its features on your local machine. However, feel free to clone this repository if necessary.
+To run the project in localhost, clone the github repository.
 
 ### PREREQUISITES 
-* python 3.9 and node v14.17.4 should be installed
-* VScode or similar IDE should be installed.
+* Python 3.8
 
 ### INSTALLATION
-* Install dependencies
-
-```
-npm install
-```
-
-or
-
-```
-yarn install
-```
-
-
 * Install python dependencies
+```
+pip install -r requirements.txt
 
 ```
-pip install requirements.txt
+* Run Django
+```
+python manage.py runserver
 
 ```
+
 
 ## CONTRIBUTE
 
