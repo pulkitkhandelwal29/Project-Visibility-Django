@@ -2,6 +2,7 @@
 Visually Impaired Society improvement by including Language speech Input to eyed website <br><br>
 Article :- <a href="https://pulkit-khandelwal.medium.com/project-visibility-8dd24b68e3e7">https://pulkit-khandelwal.medium.com/project-visibility-8dd24b68e3e7</a><br>
 Demonstration Video Link :- <a href="https://youtu.be/bB50U_fTBFM">https://youtu.be/bB50U_fTBFM</a>
+Linkedin Post :- <a href="https://www.linkedin.com/posts/pulkit-khandelwal-27a7b0215_project-visibility-visuallyimpaired-activity-6838944158200209408-dJD8">https://www.linkedin.com/posts/pulkit-khandelwal-27a7b0215_project-visibility-visuallyimpaired-activity-6838944158200209408-dJD8</a>
 
 
 
